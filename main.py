@@ -1,9 +1,6 @@
-from dotenv import load_dotenv
-import time
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from ZillowDownload import ZillowDownload
+from FormsUpload import FormsUpload
 
-
-load_dotenv()
+zillow_data = ZillowDownload()
+form = FormsUpload(zillow_data)
 

@@ -25,7 +25,7 @@ class ZillowDownload:
 
         self.addresses = [li.address.string.strip() for li in self.zillow_webpage.find_all("li",
                     class_="ListItem-c11n-8-84-3-StyledListCardWrapper")]
-        self.prices = [li.find("span", class_="PropertyCardWrapper__StyledPriceLine").string.split("/")[0].split("+")[0].replace("$", "") for li in self.zillow_webpage.find_all("li",
+        self.prices = [float(li.find("span", class_="PropertyCardWrapper__StyledPriceLine").string.split("/")[0].split("+")[0].replace("$", "").replace(",","."))*1000 for li in self.zillow_webpage.find_all("li",
                     class_="ListItem-c11n-8-84-3-StyledListCardWrapper")]
 
         # print(self.links)
