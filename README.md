@@ -45,14 +45,3 @@ This will:
 
 - The project relies on the structure of Zillow's and Google Form's HTML — changes to those sites may break the script.
 - Use this project responsibly and avoid overloading external services with automated requests.
-
-## 🧼 To-Do / Improvements
-
-- Add error handling for missing or malformed data.
-- Add logging.
-- Make the scraping logic more resilient to structure changes.
-- Optionally run headless (without opening a browser window).
-
-## 🧑‍💻 Author
-
-This automation was built with ❤️ and Python by [Your Name].
