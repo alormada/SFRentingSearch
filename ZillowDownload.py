@@ -32,9 +32,3 @@ class ZillowDownload:
         # print(self.addresses)
         # print(self.prices)
         # print(len(self.links), len(self.addresses), len(self.prices))
-
-
-
-
-page = ZillowDownload()
-page.get_data()
